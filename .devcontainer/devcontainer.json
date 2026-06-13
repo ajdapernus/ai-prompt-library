@@ -1,0 +1,19 @@
+{
+  // Preview environment for the static AI Prompt Library site.
+  // Creating a Codespace from this repo auto-serves the site on port 8000
+  // and forwards it as a PRIVATE URL (only you, when signed in, can open it).
+  // This config is only for previewing in Codespaces; the app itself still
+  // has zero runtime dependencies and runs by opening index.html directly.
+  "name": "AI Prompt Library (preview)",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "AI Prompt Library",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  // Start a dependency-free static server in the background each time you attach.
+  "postAttachCommand": "nohup python3 -m http.server 8000 >/tmp/preview.log 2>&1 &"
+}
