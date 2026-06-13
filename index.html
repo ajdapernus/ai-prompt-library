@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Library — Banka Slovenije</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <h1 class="site-title">AI Prompt Library<span class="site-subtitle">Banka Slovenije</span></h1>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="sl">SL</button>
+      </div>
+    </div>
+    <div class="confidentiality-banner" id="confidentiality-banner" role="note"></div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Categories">
+      <h2 class="sidebar-title" id="sidebar-title"></h2>
+      <ul class="category-list" id="category-list"></ul>
+    </nav>
+
+    <main class="content">
+      <div class="search-row">
+        <input type="search" id="search" class="search-input" autocomplete="off">
+      </div>
+      <div id="prompt-list" class="prompt-list"></div>
+      <p id="empty-state" class="empty-state" hidden></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p id="footer-text"></p>
+  </footer>
+
+  <script src="data/prompts.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
