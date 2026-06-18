@@ -55,35 +55,12 @@ body {
   flex-wrap: wrap;
 }
 
-/* "Banka Slovenije / Evrosistem" logo lockup, rebuilt per CGP §1:
-   serif wordmark in green, gold underline rule, gold letterspaced subtitle. */
-.wordmark {
-  display: inline-flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.wordmark-name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: var(--green);
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid var(--gold);
-}
-
-.wordmark-sub {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-align: center;
-  margin-top: 0.28rem;
-  padding-left: 0.42em;   /* offset trailing letter-spacing for visual centring */
+/* Official "Banka Slovenije / Evrosistem" logo (CGP §1.1, basic two-line
+   version), converted from the supplied EPS to vector SVG. */
+.brand-logo {
+  display: block;
+  height: 56px;
+  width: auto;
 }
 
 .lang-toggle {
