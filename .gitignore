@@ -4,3 +4,6 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+
+# Internal brand reference — kept locally, never published to GitHub or the site
+brand/
